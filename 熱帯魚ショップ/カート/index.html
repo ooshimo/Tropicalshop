@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" contact="width=device-width,initial-scale=1.0">
+	<title>ショップ</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="../css/style.css">
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Dancing Script&display=swap" rel="stylesheet">
+</head>
+<header>
+    <header class="header-inner">
+		<h1>Tropical Shop</h1>
+			<div class="menu-btn">
+				<i class="fa fa-bars" aria-hidden="true"></i>
+			</div>
+			<div class="menu">
+				<div class="menu__item"><a href="../index.html#syouhin">商品一覧</a></div>
+				<div class="menu__item"><a href="../index.html#kogata">小型熱帯魚</a></div>
+				<div class="menu__item"><a href="../index.html#cyugata">中型熱帯魚</a></div>
+				<div class="menu__item"><a href="../index.html#ogata">大型熱帯魚</a></div>
+				<div class="menu__item"><a href="../index.html/#suisou">水槽セット</a></div>
+				<div class="menu__item"><a href="../index.html#mizukusa">水草</a></div>
+				<div class="menu__item"><a href="../index.html#ishiryumoku">石・流木</a></div>
+				<div class="menu__item"><a href="../index.html#sonotaguzzu">その他グッズ</a></div>
+				<div id="page_link8" class="menu__item"><a href="#oshirase">お知らせ</a></div>
+				<div class="menu__item"><a href="../お問い合わせ/index.html">お問い合わせ</a></div>
+				<div class="menu__item"><a href="#">カート</a></a></div>
+			</div>
+	</header>
+</header>
+<main>
+    <div class="ka-tohe">
+        <form method="post" action="[index.htmlのURL]">
+            <div class="ka-tohe3">
+                <div class="image">
+            <img src="https://placehold.jp/250x156.png" alt="#" border="0">
+            <div class="small-image">
+                <img src="https://placehold.jp/80x52.png" alt="#" border="0">
+                <img src="https://placehold.jp/80x52.png" alt="#" border="0">
+                <img src="https://placehold.jp/80x52.png" alt="#" border="0">
+                </div>
+            </div>
+            <div class="ka-totext">
+                <p>商品名</p>
+                <p>価格</p>
+            <div class="ka-tohe2">
+                <br>数量：
+                    <select name="i_cnt">
+                        <option value="[商品個数表示]">1</option>
+                        <option value="[商品個数表示]">2</option>
+                        <option value="[商品個数表示]">3</option>
+                    </select>
+                    <input type="submit" value="購入する">
+                    <input type="hidden" name="cart_md" value="in">
+                    <input type="hidden" name="i_num" value="[商品ID]">
+                </div>
+            </div>
+            </div>
+        </form>
+    </div>
+    <h2>特徴</h2>
+    <p>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext</p>
+<h2>飼育情報</h2>
+<table>
+    <tr>
+        <th>寿命</th>
+        <td>texttextexttexttextexttexttextext</td>
+    </tr>
+    <tr><th>最大体長</th>
+        <td>texttextexttexttextexttexttextext</td>
+    </tr>
+    <tr>
+        <th>遊泳層</th>
+        <td>texttextexttexttextexttexttextext</td>
+    </tr>
+    <tr>
+        <th>繁殖</th>
+        <td>texttextexttexttextexttexttextext</td>
+    </tr>
+    <tr>
+        <th>水槽適正水温</th>
+        <td>texttextexttexttextexttexttextext</td>
+    </tr>
+    <tr>
+        <th>適正ph</th>
+        <td>texttextexttexttextexttexttextext</td>
+    </tr>
+    <tr>
+        <th>推奨水槽サイズ</th>
+        <td>texttextexttexttextexttexttextext</td>
+    </tr>
+    <tr>
+        <th>水槽重量（６０ｃｍの場合）</th>
+        <td>texttextexttexttextexttexttextext</td>
+    </tr>
+    <tr>
+        <th>初期費用（６０ｃｍの場合）</th>
+        <td>texttextexttexttextexttexttextext</td>
+    </tr>
+    <tr>
+        <th>混泳相性</th>
+        <td>texttextexttexttextexttexttextext</td>
+    </tr>
+    <tr>
+        <th>水草育成相性</th>
+        <td>texttextexttexttextexttexttextext</td>
+    </tr>
+    <tr>
+        <th>手間・メンテナンス</th>
+        <td>texttextexttexttextexttexttextext</td>
+    </tr>
+</table>
+
+</main>
+<footer>
+    <div>
+        <ul class="footer-inner">
+            <li><a href="../index.html#syouhin">商品一覧</a></li>
+            <li><a href="../お知らせ/index.html">お知らせ</a></li>
+            <li><a href="#">お問い合わせ</a></li>
+        </ul>
+    </div>
+</footer>
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+	<script>
+	$(function(){
+		$('.menu-btn').on('click', function(){
+		  $('.menu').toggleClass('is-active');
+		});
+	  }());
+	  
+
+
+$(function() {
+    $('#nav_toggle').click(function(){ // headerにclass名「open_nav」を追加及び削除
+        $('header').toggleClass('open_nav');
+    });
+
+    $('nav a').on('click', function(){
+        if (window.innerWidth <= 768) {
+            $('#nav_toggle').click();
+        }
+    });
+});
+
+$("#page_link8").click(function(){
+	$('.menu').toggleClass('is-active');
+});
+
+	</script>
+</body>
+</html>

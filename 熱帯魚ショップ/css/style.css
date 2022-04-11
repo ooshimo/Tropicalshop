@@ -1,0 +1,711 @@
+@charset "utf-8";
+
+body {
+    background-image: url(../img/irasuto.jpeg);
+    background-size: 100%;
+    background-repeat: repeat-y;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    max-width: 390px;
+    margin: 0 auto;
+}
+
+/* header */
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-inner h1{
+    font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.navbar-inner {
+    display: flex;
+    margin-top: 40px;
+}
+
+/*----------------------------
+* メニュー開閉ボタン
+*----------------------------*/
+.menu-btn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #fff;
+  }
+  
+  /*----------------------------
+  * メニュー本体
+  *----------------------------*/
+  a:active {
+    color: #888;
+  }
+
+  .menu a {
+	font-size: 16px;
+	display: block;
+	padding: 0.1rem 0px;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+}
+
+  .menu{
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #555;
+  }
+
+  .menu a {
+      text-decoration: none;
+      color: #fff;
+  }
+
+  .menu__item{
+    width: 100%;
+    height: auto;
+    padding: .5em 1em;
+    text-align: center;
+    color: #fff;
+    box-sizing: border-box;
+  }
+  
+  /*----------------------------
+  * アニメーション部分
+  *----------------------------*/
+  
+  /* アニメーション前のメニューの状態 */
+  .menu{
+    transform-origin: top left;
+    transform: rotateZ(-90deg);
+    transition: all .3s ease;
+  }
+  /* アニメーション後のメニューの状態 */
+  .menu.is-active{
+    transform: rotateZ(0deg);
+  }
+  
+  
+
+/*ここまで*/
+
+@media  screen and (min-width: 768px){
+    .header-inner h1 {
+        font-family: 'Dancing Script', cursive;
+        font-size: 40px;
+    }
+    .container {
+        max-width: 1000px;
+    }
+    .image-left {
+        width: 50%;   
+    }
+    .image-left img {
+        width: 280px;
+        height: 210px;
+        margin-left: 45px;
+    }
+    .text-right p {
+        font-size: 15px;
+        margin: 40px 0px 0px 0px;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+    .image-right {
+        width: 50%;
+        
+    }
+    .image-right img {
+        width: 280px;
+        height: 210px;
+        margin-right: 45px;
+    }
+    .text-left p {
+        font-size: 15px;
+        margin: 60px 0px 0px 0px;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+}
+
+/* main */
+.akua1 {
+    display: flex;
+    margin-top: 50px;
+}
+
+.image-left {
+    width: 40%;
+    margin: 0% 0% 0% 10%;
+    margin-top: 30px;
+}
+
+.text-right {
+    font-size: 10px;
+    width: 50%;
+    margin: 0% 10% 0% 10%;
+}
+
+.akua2 {
+    display: flex;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.text-left {
+    font-size: 10px;
+    width: 50%;
+    margin: 0% 10% 0% 10%;
+}
+
+.image-right {
+    width: 40%;
+    margin: 0% 10% 0% 0%;
+    margin-top: 30px;
+}
+
+.syouhinichiran {
+    text-align: center;
+}
+
+.iro {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.midashi1 {
+    font-size: 7px;
+}
+
+.midashi1 h1 {
+    margin-bottom: 0px;
+    margin: 0 auto;
+}
+
+.syoshin {
+    display: flex;
+    font-size: 5px;
+    margin: 0% 2%;
+    margin-top: 10px;
+}
+
+.cyukyu {
+    display: flex;
+    font-size: 5px;
+    margin: 0% 2%;
+    margin-top: 10px;
+}
+
+.jokyu {
+    display: flex;
+    font-size: 5px;
+    margin: 0% 2%;
+    margin-top: 10px;
+}
+
+.kogata {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.kogata h1 {
+    margin-top: 80px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.cyugata {
+    max-width: 500px;
+        margin: 0 auto;
+}
+
+.cyugata h1 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.ogata {
+    max-width: 500px;
+        margin: 0 auto;
+}
+
+.ogata h1 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.suisou {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.suisou h1 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.mizukusa {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.mizukusa h1 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.ishiryumoku {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.ishiryumoku h1 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.sonotaguzzu {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.sonotaguzzu h1 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.grid .list-item {
+    width: 107px;
+    margin: 0 auto;
+}
+
+.sabgrid {
+    display: grid;
+    gap: 40px 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0% 4%;
+    margin-top: 30px;
+    margin-bottom: 75px;
+    text-align: center;
+}
+
+.sabgrid  a{
+    text-decoration: none;
+    color: #000;
+    font-size: 8px;
+}
+
+.grid .green {
+    background-color: #E7FFE5;
+}
+
+.grid .yellow {
+    background-color: #FFF9C9;
+}
+
+.grid .red {
+    background-color: #FFCFCF;
+}
+
+.grid {
+    display: grid;
+    gap: 60px 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0% 4%;
+    margin-top: 30px;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.grid a {
+    text-decoration: none;
+    color: #000;
+    font-size: 8px;
+}
+
+.grid img {
+    margin-top: 10%;
+    width: 80px;
+    height: 52px;
+}
+
+.footer-inner {
+    max-width: 600px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 40px;
+    padding-left: 0px;
+}
+
+.footer-inner li {
+    font-size: 12.4px;
+    font-weight: bold;
+    list-style-type: none;
+    background-color: #ccdaff;
+    margin: 0px 20px 0px 20px;
+    padding: 7px 14px;
+    border-radius: 15px;
+}
+
+.footer-inner li:hover {
+    background-color: #bfcfff;
+}
+
+.footer-inner a {
+    text-decoration: none;
+    color: #000;
+}
+
+@media  screen and (min-width: 768px) {
+    .akua1 {
+        margin-top: 80px;
+    }
+    .akua2 {
+        margin-top: 90px;
+    }
+    .syouhinichiran {
+        display: block;
+    }
+
+    .syouhinichiran h1 {
+        font-size: 20px;
+        margin: 0 auto;
+    }
+    .syouhinichiran p {
+        font-size: 15px;
+    }
+    .iro {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .kogata {
+        max-width: 800px;
+    }
+    .kogata h1 {
+        font-size: 18px;
+        margin-top: 100px;
+    }
+    .cyugata {
+        max-width: 800px;
+    }
+    .cyugata h1 {
+        font-size: 18px;
+    }
+    .ogata {
+        max-width: 800px;
+    }
+    .ogata h1 {
+        font-size: 18px;
+    }
+    .suisou {
+        max-width: 800px;
+    }
+    .suisou h1 {
+        font-size: 18px;
+    }
+    .mizukusa {
+        max-width: 800px;
+    }
+    .mizukusa h1 {
+        font-size: 18px;
+    }
+    .ishiryumoku {
+        max-width: 800px;
+    }
+    .ishiryumoku h1 {
+        font-size: 18px;
+    }
+    .sonotaguzzu {
+        max-width: 800px;
+    }
+    .sonotaguzzu h1 {
+        font-size: 18px;
+    }
+    .sabgrid {
+        margin-bottom: 90px;
+    }
+    .grid {
+        gap: 80px 0px;
+        margin-bottom: 120px;
+    }
+    .grid a {
+        text-decoration: none;
+        color: #000;
+        font-size: 11px;
+    }
+    .footer-inner {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    .footer-inner li {
+        font-size: 14px;
+        margin: 0px 30px;
+        margin-bottom: 30px;
+        font-weight: bold;
+    }
+}
+
+/*アニメーション*/
+
+
+
+
+/*お知らせページ*/
+
+.midashi2 h1{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.oshirase {
+    margin-bottom: 80px;
+}
+
+.text {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.text ul  {
+    padding-left: 0px;
+}
+
+.oshirase {
+    display: inline-block;
+    text-align: left;
+}
+
+.oshirase li {
+    font-family: 'Yu Mincho';
+    list-style-type: none;
+    font-size: 13px;
+    margin-bottom: 40px;
+    padding-left: 0px;
+}
+
+.oshirase span {
+    color: red;
+    background-color: rgb(253, 253, 253);
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+
+@media  screen and (min-width: 768px) {
+    .midashi2 h1 {
+        font-size: 24px;
+        margin-top: 60px;
+    }
+
+    .oshirase li {
+        font-size: 17px;
+    }
+}
+
+/*お問い合わせ*/
+
+.midashi3 h1{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.otoiawase {
+    text-align: center;
+}
+
+.fo-mu {
+    display: inline-block;
+    text-align: right;
+}
+
+#name {
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+#email {
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+#message {
+    margin-bottom: 20px;
+}
+
+.button {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    padding: 4px 25px;
+    border-radius: 5px;
+    background-color: #c5d6ff;
+    border-color: #c5d6ff;
+    box-shadow: 1px 2px 3px #aaa;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+@media  screen and (min-width: 768px) {
+    .midashi3 h1 {
+        font-size: 24px;
+        margin-top: 60px;
+        margin-bottom: 50px;
+    }
+
+    label {
+        font-size: 18px;
+        font-weight: 500;
+    }
+}
+
+/*　カート*/
+
+.ka-tohe {
+    text-align: center;
+    margin-top: 5em;
+}
+
+.ka-tohe p {
+    margin-top: 1em;
+}
+
+.ka-tohe2 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 6em;
+}
+
+  .list-item {
+        transition-duration: 0.5s;
+    }
+
+  .list-item img{
+    cursor: pointer;
+  }
+  .list-item:hover{
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+    transform: translateY(-10px);
+    transition-duration: 0.5s;
+  }
+
+  @media  screen and (min-width: 768px) {
+        .image {
+            display: block;
+            margin: 0px 30px;
+        }
+
+        .ka-totext {
+            display: block;
+            margin: 0px 30px;
+        }
+
+      .ka-tohe3 {
+          display: flex;
+          justify-content: center;
+          margin-bottom: 40px;
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
